@@ -16,6 +16,7 @@ function strangeName(){
     var name = capit(nameFirst[Math.floor(nameFirst.length*Math.random())]+nameSecond[Math.floor(nameSecond.length*Math.random())]);
     var surname = capit(surnameFirst[Math.floor(surnameFirst.length*Math.random())]+surnameSecond[Math.floor(surnameSecond.length*Math.random())]);
     document.getElementById('inputGen').innerHTML = "And his name is: " + "<b>" + name + " " + surname + "</b>";
+    document.getElementById('dvachGen').innerHTML = ("[b]" + name + " " + surname + "[/b]").toUpperCase();
 };
 
 document.getElementById('inputBtn').onclick = strangeName;
